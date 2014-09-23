@@ -15,6 +15,8 @@ keys := { "$#z": { Emacs:"#z", Vim:"#z", others:"^z" }
         , "$#c": { Emacs:"#c", Vim:"#c", ConsoleWindowClass: "{Enter}", others:"^c" }
         , "$#v": { Emacs:"#v", Vim:"#v", others:"^v" }
 
+        , "$#h": { others:"#d" }
+
         , "$#a": { Emacs:"^xh", Vim:"#a", others:"^a" }
         , "$#e": { Emacs:"#e", Vim:"#e", others:"^e" }
         , "$#n": { Emacs:"^x2", Vim:"#n", others:"^n" }
