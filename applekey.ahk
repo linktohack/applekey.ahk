@@ -36,7 +36,9 @@ keys := { "$#z": { Emacs:"#z", Vim:"#z", others:"^z" }
         , "$#s": { Emacs:"^x^s", Vim:"#s", others:"^s" }
         , "$#t": { Emacs:"^x3", Vim:"#t", others:"^t" }
         , "$#d": { Emacs:"#d", Vim:"#d", others:"^d" }
-        , "$#+p": { Emacs:"#+p", Vim:"#+p", others:"^+p" } }
+        , "$#+p": { Emacs:"#+p", Vim:"#+p", others:"^+p" }
+        , "$#!p": { Emacs:"#!p", Vim:"#!p", others:"^!p" }
+        , "$#!+p": { Emacs:"#!+p", Vim:"#!+p", others:"^!+p" } }
 
 
 
