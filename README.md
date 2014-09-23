@@ -19,8 +19,11 @@ one's need.
 - `Windows`+`C` works in `Console`, too. `Windows`+`V` works
 naturally with [clink] support.
 
+- [RSI] motion `npfbae`
+
 - Some other common bindings: `Windows`+`ASNTW`
 
 - More is comming...
 
 [clink]: http://mridgers.github.io/clink/
+[RSI]: https://github.com/tpope/vim-rsi
