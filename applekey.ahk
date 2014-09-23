@@ -30,9 +30,11 @@ keys := { "$#z": { Emacs:"#z", Vim:"#z", others:"^z" }
         , "$^f": { Emacs:"^f", Vim:"^f", others:"{PgDn}" }
         , "$^b": { Emacs:"^b", Vim:"^b", others:"{PgUp}" }
         , "$^w": { Emacs:"^w", Vim:"^w", others:"^+{Left}{BS}" }
-        , "$#d": { Emacs:"#d", Vim:"#d", others:"^d" }
+        
         , "$#s": { Emacs:"^x^s", Vim:"#s", others:"^s" }
-        , "$#t": { Emacs:"^x3", Vim:"#t", others:"^t" } }
+        , "$#t": { Emacs:"^x3", Vim:"#t", others:"^t" }
+        , "$#d": { Emacs:"#d", Vim:"#d", others:"^d" }
+        , "$#+p": { Emacs:"#+p", Vim:"#+p", others:"^+p" } }
 
 
 
