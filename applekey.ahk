@@ -9,20 +9,32 @@
 ;;         The propitiate key sequence will be sent to the Active Window
 ;;         accordingly.
 
-keys := { "#z": { Emacs:"#z", Vim:"#z", others:"^z" } 
-        , "#+z": { Emacs:"#+z", Vim:"#+z", others:"^+z" }
-        , "#x": { Emacs:"#x", Vim:"#x", others:"^x" }
-        , "#c": { Emacs:"#c", Vim:"#c", ConsoleWindowClass: "{Enter}", others:"^c" }
-        , "#v": { Emacs:"#v", Vim:"#v", others:"^v" }
+keys := { "$#z": { Emacs:"#z", Vim:"#z", others:"^z" } 
+        , "$#+z": { Emacs:"#+z", Vim:"#+z", others:"^y" }
+        , "$#x": { Emacs:"#x", Vim:"#x", others:"^x" }
+        , "$#c": { Emacs:"#c", Vim:"#c", ConsoleWindowClass: "{Enter}", others:"^c" }
+        , "$#v": { Emacs:"#v", Vim:"#v", others:"^v" }
 
-        , "#a": { Emacs:"^xh", Vim:"#a", others:"^a" }
-        , "#d": { Emacs:"#d", Vim:"#d", others:"^d" }
+        , "$#a": { Emacs:"^xh", Vim:"#a", others:"^a" }
+        , "$#e": { Emacs:"#e", Vim:"#e", others:"^e" }
+        , "$#n": { Emacs:"^x2", Vim:"#n", others:"^n" }
+        , "$#p": { Emacs:"#p", Vim:"#p", others:"^p" }
+        , "$#f": { Emacs:"#f", Vim:"#f", others:"^f" }
+        , "$#b": { Emacs:"#b", Vim:"#b", others:"^b" }
+        , "$#w": { Emacs:"^x0", Vim:"#w", others:"^w" }
 
-        , "#s": { Emacs:"^x^s", Vim:"#s", others:"^s" }
+        , "$^a": { Emacs:"^a", Vim:"^a", others:"{Home}" }
+        , "$^e": { Emacs:"^e", Vim:"^e", others:"{End}" }
+        , "$^n": { Emacs:"^n", Vim:"^n", others:"{Down}" }
+        , "$^p": { Emacs:"^p", Vim:"^p", others:"{Up}" }
+        , "$^f": { Emacs:"^f", Vim:"^f", others:"{PgDn}" }
+        , "$^b": { Emacs:"^b", Vim:"^b", others:"{PgUp}" }
+        , "$^w": { Emacs:"^w", Vim:"^w", others:"^+{Left}{BS}" }
+        , "$#d": { Emacs:"#d", Vim:"#d", others:"^d" }
+        , "$#s": { Emacs:"^x^s", Vim:"#s", others:"^s" }
+        , "$#t": { Emacs:"^x3", Vim:"#t", others:"^t" } }
 
-        , "#t": { Emacs:"^x3", Vim:"#t", others:"^t" }
-        , "#w": { Emacs:"^x0", Vim:"#w", others:"^w" }
-        , "#n": { Emacs:"^x2", Vim:"#n", others:"^n" } }
+
 
 for k, v in keys {
   DynamicHotkey(k, "SendAppleKey", k, v)
