@@ -31,7 +31,7 @@ keys := { "$#z": { Emacs:"#z", Vim:"#z", others:"^z" }
         , "$^p": { Emacs:"^p", Vim:"^p", others:"{Up}" }
         , "$^f": { Emacs:"^f", Vim:"^f", others:"{PgDn}" }
         , "$^b": { Emacs:"^b", Vim:"^b", others:"{PgUp}" }
-        , "$^w": { Emacs:"^w", Vim:"^w", others:"^+{Left}{BS}" }
+        , "$^w": { Emacs:"^w", Vim:"^w", ConsoleWindowClass: "^w", others:"^+{Left}{BS}" }
         
         , "$#s": { Emacs:"^x^s", Vim:"#s", others:"^s" }
         , "$#t": { Emacs:"^x3", Vim:"#t", others:"^t" }
